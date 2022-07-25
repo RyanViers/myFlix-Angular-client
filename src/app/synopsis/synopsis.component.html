@@ -1,0 +1,27 @@
+<mat-card class="synopsis-dialog">
+  <mat-card-header>
+    <mat-card-title class="synopsis-dialog-title">{{
+      data.Title
+    }}</mat-card-title>
+  </mat-card-header>
+  <br />
+  <br />
+  <img src="{{ data.Image }}" />
+  <br />
+  <br />
+  <mat-card-content class="synopsis-dialog-content">
+    <p>{{ data.Description }}</p>
+  </mat-card-content>
+  <br />
+  <br />
+  <mat-card-actions class="synopsis-actions">
+    <button
+      mat-stroked-button
+      color="primary"
+      class="synopsis-close-button"
+      mat-dialog-close
+    >
+      Close
+    </button>
+  </mat-card-actions>
+</mat-card>

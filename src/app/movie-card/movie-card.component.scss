@@ -1,0 +1,91 @@
+.movie-view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(143, 64, 248, 0.5),
+    rgba(39, 200, 255, 0.5)
+  );
+  max-width: 280px;
+  width: 280px;
+  margin: 15px;
+  padding: 20px 3px;
+  box-shadow: none;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.mat-card-header {
+  height: 80px;
+  display: flex;
+  flex: 1;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 2px solid black;
+  background: lightblue;
+  font-weight: bold;
+  width: 80%;
+}
+
+.movie-card-title {
+  display: flex;
+  max-width: 200px;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+  font-weight: bolder;
+}
+
+img {
+  width: 250px;
+  height: 350px;
+  object-fit: contain;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  border: 2px solid black;
+  padding: 5px;
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease;
+  &:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+  }
+}
+
+.mat-icon-button {
+  right: 5px;
+  top: 5px;
+  padding-top: 10px;
+  align-items: left;
+}
+
+@media screen and (min-width: 601px) {
+  .movie-card-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movie-card-title {
+    font-size: 20px;
+  }
+}
