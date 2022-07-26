@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: antiquewhite;
+  background-color: black;
   // background: linear-gradient(
   //   to right,
   //   rgba(143, 64, 248, 0.5),
@@ -20,11 +20,12 @@
   height: 20vh;
   width: 30vw;
   border: 5px solid black;
-  background: linear-gradient(
-    to right,
-    rgba(143, 64, 248, 0.5),
-    rgba(39, 200, 255, 0.5)
-  );
+  background-color: black;
+  // background: linear-gradient(
+  //   to right,
+  //   rgba(143, 64, 248, 0.5),
+  //   rgba(39, 200, 255, 0.5)
+  // );
 }
 
 button {
