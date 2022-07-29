@@ -32,7 +32,12 @@ export class UserLoginFormComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  //Make the api call to login the user.
+  /**
+   * @description - Login the user.
+   * @memberof UserLoginFormComponent
+   * @returns {void}
+   * @function login
+   */
   loginUser(): void {
     this.fetchApiData.userLogin(this.userData).subscribe(
       (data) => {

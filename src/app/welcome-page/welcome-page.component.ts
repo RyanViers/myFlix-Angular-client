@@ -17,7 +17,12 @@ export class WelcomePageComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  //Function that opens the dialog when sign up button is clicked.
+  /**
+   * @description - Function that opens the dialog when register button is clicked.
+   * @memberof WelcomePageComponent
+   * @returns {void}
+   * @function openUserRegistrationDialog
+   */
   openUserRegistrationDialog(): void {
     this.dialog.open(UserRegistrationFormComponent, {
       //Assign the dialog a width.
@@ -25,7 +30,12 @@ export class WelcomePageComponent implements OnInit {
     });
   }
 
-  //Function that opens the dialog when login button is clicked.
+  /**
+   * @description - Function that opens the dialog when login button is clicked.
+   * @memberof WelcomePageComponent
+   * @returns {void}
+   * @function openUserLoginDialog
+   */
   openUserLoginDialog(): void {
     this.dialog.open(UserLoginFormComponent, {
       //Assign the dialog a width.

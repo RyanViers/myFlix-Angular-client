@@ -32,7 +32,12 @@ export class ProfileComponent implements OnInit {
     this.getUser();
   }
 
-  //Make the api call to get the user's profile.
+  /**
+   * @description - Get data on specific user.
+   * @memberof ProfileComponent
+   * @returns {object} User data.
+   * @function getUser
+   */
   getUser(): void {
     this.fetchApiData.getUser().subscribe((data: any) => {
       this.user = data;
@@ -44,7 +49,13 @@ export class ProfileComponent implements OnInit {
     });
   }
 
-  //Make the api call to remove movie from user's favorite movies.
+  /**
+   * @description - Remove favorite movie from user's favorite movies.
+   * @param {string} id - Movie id.
+   * @memberof ProfileComponent
+   * @returns {object} User data.
+   * @function removeFavoriteMovie
+   */
   removeFavorite(id: string): void {
     this.fetchApiData.removeFavoriteMovie(id).subscribe((data: any) => {
       console.log(data);
@@ -52,7 +63,12 @@ export class ProfileComponent implements OnInit {
     });
   }
 
-  //Make the api call to delete the user's profile.
+  /**
+   * @description - Delete user account and navigate to welcome page.
+   * @memberof ProfileComponent
+   * @returns Success message.
+   * @function deleteUser
+   */
   deleteUser(): void {
     if (confirm('Are you sure you want to delete your profile?')) {
       this.router.navigate(['welcome']).then(() => {
@@ -67,7 +83,12 @@ export class ProfileComponent implements OnInit {
     }
   }
 
-  //Open the edit profile dialog.
+  /**
+   * @description - Open Edit Profile Form.
+   * @memberof ProfileComponent
+   * @returns {object} User data.
+   * @function openEditProfileDialog
+   */
   openEditProfileDialog(): void {
     this.dialog.open(EditProfileComponent, {
       width: '500px',

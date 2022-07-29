@@ -21,7 +21,12 @@ export class EditProfileComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  //Make the api call to update the user's profile.
+  /**
+   * @description - This method is used to update the user profile.
+   * @function - updateUser
+   * @returns - Success message if the user profile is updated successfully.
+   * @memberof EditProfileComponent
+   */
   updateUser(): void {
     this.fetchApiData.updateUser(this.userData).subscribe((data: any) => {
       this.dialogRef.close();
