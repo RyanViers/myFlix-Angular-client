@@ -9,7 +9,7 @@ import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 //Declare the api url that will provide data to the application.
-const apiUrl = 'https://ryan-viers-movie-app.herokuapp.com/';
+const apiUrl = 'http://movie-api-dev.us-east-1.elasticbeanstalk.com/';
 @Injectable({
   providedIn: 'root',
 })
